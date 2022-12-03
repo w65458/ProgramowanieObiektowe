@@ -1,6 +1,6 @@
-package Lab3.LAB_06;
+package Lab3.LAB_06.Zadanie1;
 
-public class Okrag {
+public class Okrag extends Figura {
     private Punkt punktSrodkowy;
     private double promien;
 
@@ -38,5 +38,10 @@ public class Okrag {
         } else {
             System.out.println("Punkt (" + punkt.x + ", " + punkt.y + ") lezy poza okregiem");
         }
+    }
+
+    @Override
+    String opis() {
+        return "Klasa Okrag. Kolor obiektu: " + kolor;
     }
 }

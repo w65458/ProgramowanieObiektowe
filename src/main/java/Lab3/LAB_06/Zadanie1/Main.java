@@ -1,4 +1,4 @@
-package Lab3.LAB_06;
+package Lab3.LAB_06.Zadanie1;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Main {
         Punkt punkt3 = new Punkt(1.0, 1.0);
 
         punkt1.opis();
-        punkt1.przesun(3,2);
+        punkt1.przesun(3, 2);
         punkt1.opis();
         punkt1.zeruj();
         punkt1.opis();
@@ -20,7 +20,16 @@ public class Main {
         System.out.println("Wysokosc trojkata: " + trojkat.wys + ", podstawa trojkata: " + trojkat.podst);
 
         Okrag okrag = new Okrag(new Punkt(0.0, 0.0), 2.0);
-        okrag.wSrodku(new Punkt(0.0,0.0));
-        okrag.wSrodku(new Punkt(3.0,3.0));
+        okrag.wSrodku(new Punkt(0.0, 0.0));
+        okrag.wSrodku(new Punkt(3.0, 3.0));
+
+        prostokat.przesun(3.0, 5.0);
+        System.out.println(prostokat.punkt.x + " " + prostokat.punkt.y);
+
+        Kwadrat kwadrat = new Kwadrat("czarny", 5.0);
+        System.out.println(prostokat.opis());
+        System.out.println(trojkat.opis());
+        System.out.println(okrag.opis());
+        System.out.println(kwadrat.opis());
     }
 }

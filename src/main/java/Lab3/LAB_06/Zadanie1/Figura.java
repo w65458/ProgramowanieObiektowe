@@ -1,14 +1,15 @@
-package Lab3.LAB_06;
+package Lab3.LAB_06.Zadanie1;
 
 public class Figura {
     Punkt punkt;
     String kolor = "bialy";
 
     Figura() {
-        punkt = new Punkt(0,0);
+        punkt = new Punkt(0, 0);
     }
 
     Figura(String kolor) {
+        this.punkt = new Punkt(0, 0);
         this.kolor = kolor;
     }
 
@@ -23,6 +24,5 @@ public class Figura {
     String opis() {
         return "Klasa Figura. Kolor obiektu: " + kolor;
     }
-
 
 }

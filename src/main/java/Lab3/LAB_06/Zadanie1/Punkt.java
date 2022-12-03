@@ -1,4 +1,4 @@
-package Lab3.LAB_06;
+package Lab3.LAB_06.Zadanie1;
 
 public class Punkt {
     public double x;
