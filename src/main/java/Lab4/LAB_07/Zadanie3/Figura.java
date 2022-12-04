@@ -1,25 +1,26 @@
-//deklaracja klasy abstrakcyjnej
+package Lab4.LAB_07.Zadanie3;
 
-public class Figura{
-	
-	//pola metody i kontruktory
-	Punkt punkt;
-	String kolor = "bialy";
-	
-	
-	Figura(){
-		punkt = new Punkt(0,0);
-	}
-	Figura(String kolor){
-		this.kolor=kolor;
-	}
-	Figura(Punkt punkt){
-		this.punkt=punkt;
-	}
-	String getKolor(){
-		return kolor;
-	}
-	//metody abstrakcyjne
-	
-	
-	}
+abstract class Figura {
+    Punkt punkt;
+    String kolor = "bialy";
+
+    Figura() {
+        punkt = new Punkt(0, 0);
+    }
+
+    Figura(String kolor) {
+        this.kolor = kolor;
+    }
+
+    Figura(Punkt punkt) {
+        this.punkt = punkt;
+    }
+
+    String getKolor() {
+        return kolor;
+    }
+
+    abstract String opis();
+
+    abstract void skaluj(float skala);
+}

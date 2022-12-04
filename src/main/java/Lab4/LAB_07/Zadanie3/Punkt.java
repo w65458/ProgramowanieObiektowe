@@ -1,9 +1,9 @@
+package Lab4.LAB_07.Zadanie3;
 
-public class Punkt {
-	//pola
+class Punkt {
     int x = 0;
     int y = 0;
-    // konstruktor
+
     Punkt(int x, int y) {
         this.x = x;
         this.y = y;
